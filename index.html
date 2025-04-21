@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <style>
+        .hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95vh;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-section .hero {
+  max-width: 50%;
+  color: #090909;
+  margin-top: -200px;
+  margin-left: -700px;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fbf8fb;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #080708;
+}
+.hero-section .img img {
+  width: 517px;
+}
+.hero-section .buttons {
+  margin-top: 40px;
+}
+.hero-section .buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+.hero-section .buttons a:not(:last-child) {
+  margin-right: 15px;
+}
+.buttons .join {
+  background-color: #47b2e4;
+}
+.hero-section .buttons .learn {
+  border: 1px solid #fff;
+  border-radius: 0.375rem;
+}
+.hero-section .buttons a:hover {
+  background-color: #47b2e4;
+}
+
+
+.center{
+left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 290px;
+  transform-style: preserve-3d;
+ perspective: 1000px;
+ margin-top: 380px;
+ 
+}
+.front-face, .back-face{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(136, 134, 134, 0.65),rgba(30, 29, 29, 0.65)), url(images/image.png);
+  background-size: cover;
+  background-position: center;
+  transform: translateY(0deg);
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.4,.2,.2,1);
+}
+.contents{
+  left: 0%;
+  top: 50%;
+  width: 100%;
+  perspective: 1000px;
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  
+}
+.front p{
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: white;
+}
+.front span{
+  font-size: 23px;
+  color: white;
+}
+.front p:after{
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 2px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.back-face{
+  transform: rotateY(180deg);
+  background: linear-gradient(45deg,#043348 0%,#032535 100%);
+}
+.back {
+  color: white;
+}
+.back h2{
+  font-size: 33px;
+  padding-bottom: 5px;
+}
+.back span{
+  font-size: 25px;
+}
+.icons{
+  margin: 10px 0;
+  display: block;
+}
+i.fab{
+  color:  #042f4b;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.center:hover > .back-face{
+  transform: rotateY(0deg);
+}
+.center:hover > .front-face{
+  transform: rotateY(-180deg);
+}
+.center,.front-face,
+.contents,.back-face{
+  position: absolute;
+
+}
+::selection {
+    background: rgba(0, 0, 0, .2);
+}
+
+body {
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.services {
+    position: relative;
+    background: #ffffff;
+    padding: 100px;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.contact{
+    position: relative;
+    background: #ffffff;
+    padding: 100px;
+}
+.btn1{
+  margin-top: 60px;
+  border-radius: 24px;
+  background: #f5168d;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+width: 100px;
+}
+
+    </style>
+
+    <script src="script.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+  
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+   <li><a href="#services">About Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="btn"><a href="login.html">Sign In</a></button>
+</nav>
+<!---<div class="animated-text">
+ <h3> I'm a <span></span></h3>
+</div>-->
+<section class="parallax">
+    <img src="images/hill1.png" id="hill1">
+    <img src="images/hill2.png" id="hill2">
+    <img src="images/hill3.png" id="hill3">
+    <img src="images/hill4.png" id="hill4">
+    <img src="images/hill5.png" id="hill5">
+    <img src="images/tree.png" id="tree">
+    <h2 id="text">Volunify</h2>
+    <img src="images/leaf.png" id="leaf">
+    <img src="images/output-onlinetools.png" id="plant">
+</section>
+</div>
+<section class="services" id="services">
+
+  <h2>About Us</h2>
+  <p>EXPLORE YOUR SKILLS.</p>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="center">
+    <div class="front-face">
+       <div class="contents front">
+          <p>
+            Shape the Future
+          </p>
+          <span> Uniting volunteers worldwide for disaster relief and epidemic response efforts, empowering everyone to make a difference.</span>
+       </div>
+    </div>
+    <div class="back-face">
+       <div class="contents back">
+          <h2>
+            About Us!
+          </h2>
+          <span>Follow Us</span>
+          <div class="icons">
+             <i class="fab fa-facebook-f"></i>
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-instagram"></i>
+             <i class="fab fa-linkedin-in"></i>
+          </div>
+       <a href="demo.html">   <button class="btn1">Know More</button></a>
+       </div>
+    </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Reach out to us for any inquiries or feedback.</p><br><br><br>
+  <div class="row">
+   
+    <div class="col form">
+      <form>
+        <input type="text" placeholder="Name*" value="" id="username" required>
+        <input type="email" placeholder="Email*" value="" id="email" required>
+        <textarea placeholder="Message*" value="" id="message" required></textarea>
+        <button id="submit" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <center>
+    <span><center>Copyright © 2023 All Rights Reserved</center></span>
+</center>
+
+  
+</footer>
+
+
+
+
+    
+    
+      <script type="module">
+ 
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+            import { getDatabase, ref, set, get, child  } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+            const firebaseConfig = {
+            apiKey: "AIzaSyAVSZ2acNGecN_5WtjwZTp-Pe7xGqp5KaQ",
+            authDomain: "contact-dc24f.firebaseapp.com",
+            projectId: "contact-dc24f",
+            storageBucket: "contact-dc24f.appspot.com",
+            messagingSenderId: "34288303399",
+            appId: "1:34288303399:web:bacf70ac1cf59c0f557d02"
+             };
+
+  // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+           const db = getDatabase(app);
+
+           document.getElementById("submit").addEventListener('click', function(e){
+    e.preventDefault();
+    
+    // Save data to Firebase
+    set(ref(db, 'user/' + document.getElementById("username").value), {
+        username: document.getElementById("username").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    }).then(() => {
+        // Alert user
+        
+
+        // Clear input fields
+        document.getElementById("username").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+    }).catch((error) => {
+        // Handle errors
+        console.error("Error saving to Firebase: ", error);
+    });
+});
+let text = document.getElementById('text');
+let leaf = document.getElementById('leaf');
+let hill1 = document.getElementById('hill1');
+let hill4 = document.getElementById('hill4');
+let hill5 = document.getElementById('hill5');
+
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+
+    text.style.marginTop = value * 1.5 + 'px';
+    leaf.style.top = value * -1.5 + 'px';
+    leaf.style.left = value * 1.5 + 'px';
+    hill5.style.left = value * 1.5 + 'px';
+    hill4.style.left = value * -1.5 + 'px';
+    hill1.style.top = value * 0.5 + 'px';
+});
+
+</script>
+  
+  
+ 
+    
+  </body>
+</html>

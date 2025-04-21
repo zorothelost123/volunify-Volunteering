@@ -1,13 +1,6 @@
-Volunify is a platform designed to connect volunteers with NGOs and social initiatives. It simplifies volunteer coordination, ensuring that opportunities reach the right people efficiently.
-
-Features
-
-Volunteer Registration: Individuals can sign up and find opportunities based on interests.
-
-NGO Management: Organizations can post requirements and manage volunteers.
-
-Interactive Forms: Easy-to-use forms for volunteer signups and participation.
-
-Profile Management: Users can track their activities and engagements.
-
-Responsive Design: Mobile-friendly layout for better accessibility
+# index
+Uniting Communities Through Volunteerism. Discover, Coordinate, and Make an Impact Together.                                                                    
+Website Demo-- https://kushkushal.github.io/Volunify/
+![Main Page - Personal - Microsoft​ Edge 27-04-2024 07_16_58](https://github.com/Kushkushal/Volunify/assets/136258142/bb6284e4-517b-41d0-b040-d8d06f10acf6)
+![Main Page - Personal - Microsoft​ Edge 27-04-2024 07_17_25](https://github.com/Kushkushal/Volunify/assets/136258142/0c2edd1d-8460-4c88-a23c-49b6ddd4c59f)
+![Main Page - Personal - Microsoft​ Edge 27-04-2024 07_20_50](https://github.com/Kushkushal/Volunify/assets/136258142/885262e9-8f7e-4384-a3da-e199b8a58ab0)
